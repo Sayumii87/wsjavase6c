@@ -1,0 +1,12 @@
+package br.com.livraria.modelo;
+
+public class Livro extends Produto{
+	private String editora;
+	private String autor;
+	private int isbn;
+	
+	public Livro() {}
+
+
+	
+}

@@ -1,0 +1,3 @@
+super.definirDuracao();
+		double mensalidade = super.getDuracao() * fator * 600;
+		super.setMensalidade(mensalidade);

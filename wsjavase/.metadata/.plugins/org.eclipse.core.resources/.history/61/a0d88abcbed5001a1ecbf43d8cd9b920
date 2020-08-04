@@ -1,0 +1,26 @@
+package br.com.polimorfismo.beans;
+
+public abstract class Formacao {
+
+	private String decricao;
+	private int periodo;
+	private double mensalidade;
+	private int duracao;
+	
+	public Formacao() {}
+
+	public Formacao(String decricao, int periodo, double mensalidade, int duracao) {
+		this.decricao = decricao;
+		this.periodo = periodo;
+		this.mensalidade = mensalidade;
+		this.duracao = duracao;
+	};
+	
+	public void setAll(String decricao, int periodo, double mensalidade, int duracao) {
+		this.decricao = decricao;
+		this.periodo = periodo;
+		this.mensalidade = mensalidade;
+		this.duracao = duracao;
+	};
+	
+}

@@ -1,0 +1,20 @@
+package br.com.universidade.teste;
+
+import br.com.universidade.modelo.Aluno;
+import br.com.universidade.modelo.Pessoa;
+import br.com.universidade.modelo.Professor;
+
+public class TestePessoa {
+	
+	public static void main (String args[]) {
+		//Pessoa pessoa = new Pessoa();
+		Aluno objeto = new Aluno();
+		System.out.println(objeto.verificarDados());
+		
+		Professor objeto2 = new Professor();
+		System.out.println(objeto2.verificarDados();
+		
+		
+				
+	}
+}

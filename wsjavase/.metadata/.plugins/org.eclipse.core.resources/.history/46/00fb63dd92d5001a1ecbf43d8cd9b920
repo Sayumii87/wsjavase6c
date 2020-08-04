@@ -1,0 +1,10 @@
+package br.com.universidade.modelo;
+
+public class Professor {
+
+	private String dtContratacao;
+	private String titulacao;
+	private float valorHora;
+	
+	
+}

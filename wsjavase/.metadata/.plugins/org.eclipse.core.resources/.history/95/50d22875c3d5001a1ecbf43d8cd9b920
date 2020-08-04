@@ -1,0 +1,37 @@
+package br.com.polimorfismo.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.polimorfismo.beans.Bacharelado;
+import br.com.polimorfismo.beans.Formacao;
+import br.com.polimorfismo.beans.Medio;
+import br.com.polimorfismo.beans.Tecnologo;
+
+public class TesteFormacao {
+
+	public static void main(String[] args) {
+		
+		Formacao formacao = null;
+		
+		if (JOptionPane.showInputDialog("Cadastrar Bacharelado (B) ou Tecnologo (T) ou Medio (M)").toUpperCase().charAt(0)=='B') 
+		{
+			formacao = new Bacharelado(
+									      
+					                  );
+			
+			
+		} else if (JOptionPane.showInputDialog("Cadastrar Bacharelado (B) ou Tecnologo (T) ou Medio (M)").toUpperCase().charAt(0)=='T') 
+		  {
+			formacao = new Tecnologo (
+								     );
+					
+		  } else if (JOptionPane.showInputDialog("Cadastrar Bacharelado (B) ou Tecnologo (T) ou Medio (M)").toUpperCase().charAt(0)=='M') 
+			{
+			  formacao = new Medio(
+					              );
+			} else 
+			  {
+				JOptionPane.showMessageDialog(null, "Opcao invalida");
+		      }
+	}
+}

@@ -1,0 +1,16 @@
+package br.com.falhas.implementacao;
+
+public class TesteFalhas {
+
+	public static void main(String[] args) {
+		try { //ficam as linhas onde podem ser disparadas as excecoes
+			int numero = Integer.parseInt("A");
+			System.out.println(numero);
+		} 
+		
+		catch(Exception e) {    // trata a excecao. Exception é o pai de todas as excecoes
+			System.out.println("Deu ruim");
+			e.printStackTrace();
+		}
+	}
+}

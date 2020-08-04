@@ -1,0 +1,37 @@
+package br.com.polimorfismo.beans;
+
+public class Tecnologo extends Formacao{
+	
+	private boolean planoEstendido;
+	
+	public Tecnologo() {};
+
+	public Tecnologo(String decricao, int periodo, double mensalidade, int duracao, boolean planoEstendido) {
+		super(decricao, periodo, mensalidade, duracao);
+		this.planoEstendido = planoEstendido;
+	};
+	
+	public void setAll(String decricao, int periodo, double mensalidade, int duracao, boolean planoEstendido) {
+		super.setAll(decricao, periodo, mensalidade, duracao);
+		this.planoEstendido = planoEstendido;
+	};
+	
+	public String getAll() {
+		return
+				super.getAll() + 
+				"Plano estendido....:" + planoEstendido;
+	}
+
+	public boolean isPlanoEstendido() {
+		return planoEstendido;
+	}
+
+	public void setPlanoEstendido(boolean planoEstendido) {
+		this.planoEstendido = planoEstendido;
+	};
+	
+	public void calculaMensalidade(double fator) {
+		
+	}
+	
+}

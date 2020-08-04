@@ -1,0 +1,74 @@
+package br.com.polimorfismo.beans;
+
+public abstract class Formacao {
+
+	private String descricao;
+	private int periodo;
+	private double mensalidade;
+	private int duracao;
+	
+	public Formacao() {}
+
+	public Formacao(String decricao, int periodo, double mensalidade, int duracao) {
+		this.descricao = decricao;
+		this.periodo = periodo;
+		this.mensalidade = mensalidade;
+		this.duracao = duracao;
+	};
+	
+	public void setAll(String decricao, int periodo, double mensalidade, int duracao) {
+		this.descricao = decricao;
+		this.periodo = periodo;
+		this.mensalidade = mensalidade;
+		this.duracao = duracao;
+	};
+	
+	public String getAll() {
+		return
+				"Descrição.....: " + descricao + "\n" +
+				"Periodo.......: " + periodo + "\n" +
+				"Mensalidade...: " + mensalidade + "\n" +
+				"Duracao...: " + duracao + "\n";
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public int getPeriodo() {
+		return periodo;
+	}
+
+	public void setPeriodo(int periodo) {
+		this.periodo = periodo;
+	}
+
+	public double getMensalidade() {
+		return mensalidade;
+	}
+
+	public void setMensalidade(double mensalidade) {
+		this.mensalidade = mensalidade;
+	}
+
+	public int getDuracao() {
+		return duracao;
+	}
+
+	public void setDuracao(int duracao) {
+		this.duracao = duracao;
+	};
+	
+	public void definirDuracao() {};
+	
+	public Double exibirMedias(double ps1, double ps2) {
+		return false;
+	};
+	
+	
+	
+}

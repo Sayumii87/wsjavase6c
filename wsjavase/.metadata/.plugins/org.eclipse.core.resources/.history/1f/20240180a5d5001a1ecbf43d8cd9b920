@@ -1,0 +1,26 @@
+package br.com.livraria.modelo;
+
+public class Cd extends Produto{
+	private String artista;
+	private String gravadora;
+	private String estilo;
+	
+	public Cd() {}
+
+	public Cd(int id, String descricao, int qtde, float valorCompra, float valorVenda, String artista, String gravadora,
+			String estilo) {
+		super(id, descricao, qtde, valorCompra, valorVenda);
+		this.artista = artista;
+		this.gravadora = gravadora;
+		this.estilo = estilo;
+	}
+	
+	public void Cd(int id, String descricao, int qtde, float valorCompra, float valorVenda, String artista, String gravadora,
+			String estilo) {
+		super.setAll(id, descricao, qtde, valorCompra, valorVenda);
+		this.artista = artista;
+		this.gravadora = gravadora;
+		this.estilo = estilo;
+	}
+
+}

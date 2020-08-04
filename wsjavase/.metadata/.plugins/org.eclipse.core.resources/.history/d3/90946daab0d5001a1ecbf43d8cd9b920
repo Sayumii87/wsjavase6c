@@ -1,0 +1,33 @@
+package br.com.universidade.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidade.modelo.Aluno;
+import br.com.universidade.modelo.Pessoa;
+import br.com.universidade.modelo.Professor;
+import br.com.universidade.tela.Magica;
+
+public class TestePessoa {
+	
+	public static void main (String args[]) {
+		//Pessoa pessoa = new Pessoa();
+		
+		// Peça ao usuário o que ele deseja cadastrar
+		// Professor ou Aluno
+		// Dependendo da escolha solicite dados e exiba no final
+		
+		
+		String opcao = JOptionPane.showInputDialog("Cadastrar Professor (P) ou Aluno A").toUpperCase();
+		
+		if (opcao.equals("A")) { 
+			Aluno aluno = new Aluno();
+			aluno.setAll(
+						Magica.t("Nome do Aluno"),
+						Endereco Magica.t(E),
+					);
+		} else if (opca.equals("P")) {	
+			Professor objeto2 = new Professor();
+			objeto2.setValorHora(10);
+				
+	}
+}

@@ -1,0 +1,16 @@
+package br.com.falhas.excecao;
+
+public class Excecao {
+
+	public static String tratarExcecao(Exception e) {
+		if (e instanceof NullPointerException) {
+			return "Objeto nulo";
+		} else if (e instanceof NumberFormatException) {
+			return "Numero invalido";
+		} else if (e instanceof ArrayIndexOutOfBoundsException) {
+			return "Vetor estourou";
+		} else {
+			return "Excecao nao tratada"; 
+		}
+	}
+}

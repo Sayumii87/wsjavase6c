@@ -1,0 +1,23 @@
+package br.com.livraria.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.livraria.modelo.Cd;
+import br.com.livraria.modelo.Livro;
+import br.com.livraria.modelo.Produto;
+
+public class TesteProduto {
+
+	public static void main(String[] args) {
+		
+		Produto produto;
+		
+		if (JOptionPane.showInputDialog("Cadastrar Livro (L) ou CD (C)").toUpperCase().charAt(0)=='L') { 
+			produto = new Livro();
+						//Tela.t("Nome do Livro"),
+		} else {
+			produto = new Cd();
+		}
+	}
+
+}

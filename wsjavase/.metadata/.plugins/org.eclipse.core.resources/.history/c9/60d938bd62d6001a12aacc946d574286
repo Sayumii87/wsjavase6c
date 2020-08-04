@@ -1,0 +1,32 @@
+package br.com.falhas.implementacao;
+
+import br.com.falhas.excecao.Excecao;
+
+public class TesteFalhas {
+
+	public static void main(String[] args) {
+		
+		String palavra = null;
+		
+		try { //ficam as linhas onde podem ser disparadas as excecoes
+			
+			int numero = Integer.parseInt("1");
+			System.out.println(palavra.length());
+			System.out.println(numero);
+			
+			int x[] = new int[2];
+			x[0] = 15;
+			x[1] = 98;
+			//x[2] = 12;
+		} 
+		
+		//catch(Exception e) {    // trata a excecao. Exception é o pai de todas as excecoes
+		catch(Exception e) {	
+			Excecao objeto = new Excecao();
+			System.out.println(objeto.tratarExcecao(e));
+		}
+		finally {    // as linhas deste bloco, serão executadas se houver ou não excecao
+			System.out.println("Tenha um bom dia!");
+		}
+	}
+}

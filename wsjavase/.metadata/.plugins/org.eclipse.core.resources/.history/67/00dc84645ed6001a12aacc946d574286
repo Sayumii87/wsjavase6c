@@ -1,0 +1,27 @@
+package br.com.falhas.implementacao;
+
+public class TesteFalhas {
+
+	public static void main(String[] args) {
+		
+		String palavra = "";
+		
+		try { //ficam as linhas onde podem ser disparadas as excecoes
+			
+			int numero = Integer.parseInt("A");
+			System.out.println(palavra.length());
+			System.out.println(numero);
+		} 
+		
+		//catch(Exception e) {    // trata a excecao. Exception é o pai de todas as excecoes
+		catch(NumberFormatException e) {
+			System.out.println("Numero invalido");
+		}
+		catch(NullPointerException e) {
+			System.out.println("Objeto nulo");
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

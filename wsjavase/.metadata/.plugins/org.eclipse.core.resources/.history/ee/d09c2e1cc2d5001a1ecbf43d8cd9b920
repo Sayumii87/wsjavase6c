@@ -1,0 +1,18 @@
+package br.com.polimorfismo.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.polimorfismo.beans.Formacao;
+
+public class TesteFormacao {
+
+	public static void main(String[] args) {
+		
+		Formacao formacao = null;
+		
+		(JOptionPane.showInputDialog("Cadastrar Bacharelado (B) ou Tecnologo (T) ou Medio (M)").toUpperCase().charAt(0)=='B') 
+		{
+			
+		}
+
+}

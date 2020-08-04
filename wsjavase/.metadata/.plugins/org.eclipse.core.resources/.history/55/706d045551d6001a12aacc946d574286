@@ -1,0 +1,72 @@
+package br.com.polimorfismo.implementacao;
+
+import javax.swing.JOptionPane;
+import br.com.polimorfismo.beans.Bacharelado;
+import br.com.polimorfismo.beans.Formacao;
+import br.com.polimorfismo.beans.Medio;
+import br.com.polimorfismo.beans.Tecnologo;
+import br.com.polimorfismo.tela.Tela;
+
+public class TesteFormacao {
+
+	public static void main(String[] args) {
+		
+		String opcao = JOptionPane.showInputDialog("Cadastrar Bacharelado (B) ou Tecnologo (T) ou Medio (M)").toUpperCase();
+				
+		if (opcao.equals("B")) 
+		{
+					
+			Bacharelado b = new Bacharelado();
+			
+			b.calcularMensalidade(1);
+			
+			b.setAll(
+									      Tela.t("Descricao do bacharelado").toUpperCase(),
+									      Tela.i("Periodo"),
+									      b.getMensalidade(),
+									      b.getDuracao(),
+									      Tela.t("Projeto Conclusao").toUpperCase(),
+									      Tela.i("Carga Horaria Estagio")
+					                  );
+			
+			JOptionPane.showMessageDialog(null, b.getAll());	
+			
+		} 
+		
+		else if (opcao.equals("T")) 
+		  {
+			Tecnologo t = new Tecnologo();
+			
+			t.calculaMensalidade(2);
+			t.setAll(
+										Tela.t("Descricao do tecnologo").toUpperCase(),
+										Tela.i("Periodo"),
+										t.getMensalidade(),
+										t.getDuracao(),
+										Tela.b("Plano estendido")
+								     );
+			
+			JOptionPane.showMessageDialog(null, t.getAll());
+					
+		  } 
+		
+		else if (opcao.equals("M")) 
+			{
+			Medio m = new Medio();
+			
+			m.calculaMensalidade(3);
+			
+			m.setAll(
+					  				Tela.t("Descricao do Medio").toUpperCase(),
+					  				Tela.i("Periodo"),
+					  				m.getMensalidade(),
+					  				m.getDuracao(),
+					  				Tela.t("Tipo").toUpperCase()
+					              );
+			  
+			JOptionPane.showMessageDialog(null, m.getAll());
+			  
+			} 
+		else { JOptionPane.showMessageDialog(null, "Opcao invalida");}
+	}
+}

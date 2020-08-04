@@ -1,0 +1,26 @@
+package br.com.livraria.modelo;
+
+public class Livro extends Produto{
+	private String editora;
+	private String autor;
+	private int isbn;
+	
+	public Livro() {}
+
+	public Livro(int id, String descricao, int qtde, float valorCompra, float valorVenda, String editora, String autor,
+			int isbn) {
+		super(id, descricao, qtde, valorCompra, valorVenda);
+		this.editora = editora;
+		this.autor = autor;
+		this.isbn = isbn;
+	}
+
+	public void setAll(int id, String descricao, int qtde, float valorCompra, float valorVenda, String editora, String autor,
+			int isbn) {
+		super(id, descricao, qtde, valorCompra, valorVenda);
+		this.editora = editora;
+		this.autor = autor;
+		this.isbn = isbn;
+	}
+	
+}

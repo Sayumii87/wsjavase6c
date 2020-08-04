@@ -1,0 +1,17 @@
+package br.com.colecoes.teste;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TesteList {
+
+	public static void main(String[] args) {
+		
+		// armazenar vários tipos de dados em um mesmo elemento
+		// Interface List
+		
+		List lista = new ArrayList();
+		
+	}
+
+}

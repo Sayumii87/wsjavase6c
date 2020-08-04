@@ -1,0 +1,18 @@
+package br.com.colecoes.implementacao;
+import java.util.Set;
+import java.util.HashSet;
+
+public class TesteSet {
+
+	public static void main(String[] args) {
+		
+		Set lista = new HashSet();
+		lista.add("DBA");
+		lista.add("ESTAGIARIO");
+		lista.add("ANALISTA");
+		lista.add("DBA");
+		
+		System.out.println(lista);
+	}
+
+}
